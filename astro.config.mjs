@@ -4,8 +4,8 @@ import starlight from '@astrojs/starlight';
 // import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-	site: 'http://localhost:4321',
-	// site: 'https://azart.live',
+	// site: 'http://localhost:4321',
+	site: 'https://azart.live',
 	integrations: [
 		// sitemap({
 		// 	i18n: {
