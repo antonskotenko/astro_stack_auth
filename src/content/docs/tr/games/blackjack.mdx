@@ -1,0 +1,92 @@
+---
+title: Blackjack
+description: Blackjack, ücretsiz olarak ve kayıt olmadan çevrimiçi oynayabileceğiniz basit kurallara sahip bir kart oyunudur.
+hero:
+  tagline: Blackjack, basit kuralları ve dinamik doğası nedeniyle oyun eğlence dünyasında ikonik bir kart oyunudur.
+  image:
+    file: ../../../../assets/blackjack_hero_image.png
+    alt: Blackjack Card Game
+  actions:
+    - text: Oyun
+      link: /blackjack/start
+      icon: right-arrow
+---
+
+import YandexMetrika from '../../../../components/YandexMetrika.astro';
+import { Aside } from '@astrojs/starlight/components';
+
+<YandexMetrika />
+
+## Oyunun kuralları
+
+Oyunun amacı, toplamı 21 puandan fazla olmayan, ancak yine de Krupiye toplamını aşan bir kart kombinasyonu yaparak dağıtıcıyı yenmektir.
+
+## Kart puanlama sistemi
+
+İkiden ona kadar olan kartlar nominal değerindedir; Vale, Kız ve Papaz 10 puan değerindedir ve As benzersizdir - duruma bağlı olarak bir veya on bir puan olarak sayılabilir: toplam skor 21'i geçmediği sürece As 11 değerindedir ve toplam skor 21'i geçerse As 1 değerindedir.
+
+## Oyuna başlamak
+
+Bir oyuncunun topladığı kartların kombinasyonuna 'El' denir.
+
+Oyun aksiyonu oyuncunun bir bahis koymasıyla başlar. Daha sonra dağıtıcı oyuncuya iki açık kart ve kendisine de bir açık ve bir kapalı kart dağıtır. Oyuncunun şu seçenekleri vardır 
+- STAND düğmesine basarak mevcut kartlarla durun;
+- HIT düğmesine basarak ek kartlar alın;
+- DOUBLE düğmesine basarak bahsi ikiye katlayın;
+- SPLIT düğmesine basarak bir çift aynı kartı bölmek.
+
+## Bahsi ikiye katlama
+
+Kartlar dağıtıldıktan sonra, bir oyuncu Blackjack (toplam 21 eden iki kartın kombinasyonu) hariç herhangi bir elde bahsini ikiye katlayabilir. Bu durumda, oyuncuya yalnızca bir ek kart dağıtılır.
+
+## Kart Bölme
+
+Bir oyuncuya 2 ve 2, 10 ve 10, As ve As gibi iki aynı kart veya aynı olması gerekmeyen iki resim dağıtılırsa ve oyuncunun bahsi tekrarlamak için yeterli parası varsa, çifti iki ele bölebilir. Bu durumda, oyuncu mevcut bahse eşit bir bahis daha koyar. Oyun daha sonra her el ile ayrı ayrı devam eder.
+
+## Sonuçların sayılması
+
+Oyuncu bir karar verdiğinde, dağıtıcı ikinci kartını gösterir.
+
+Eğer oyuncu overcall yaparsa, bahsi kaybeder. Eğer krupiye overcall yaparsa, oyuncu 1:1 oranla kazanır.
+
+<Aside>
+Örneğin:
+
+Bir oyuncu 100$ yatırır ve 22 ya da daha fazla puan alır. 100$'lık bahsini kaybeder. Eğer dağıtıcı da aynı durumdaysa, oyuncu 200$ kazanır.
+</Aside>
+
+Oyuncu ve dağıtıcı berabere kalırsa, yani oyuncu ve dağıtıcı aynı puana sahipse, oyuncu bahsini geri alır. Başka bir deyişle, hiçbir şey kaybetmediniz, ancak kazanmadınız da.
+
+## Özel Durumlar
+
+Blackjack, toplamı 21 puan olan ilk iki kartın, örneğin bir Kız ve bir As'ın kombinasyonudur.
+
+Toplamı 21 puan olan ancak 2'den fazla kart içeren bir kart kombinasyonu Blackjack değildir. Bu nedenle, oyuncunun 21 puanı varsa ve Krupiye Blackjack'i varsa, aynı sayıda puana sahip olsalar bile dağıtıcı kazanır.
+
+Bir oyuncunun Blackjack'i varsa, bahsi bir buçuk ile çarpılır, yani 3:2 oranla hemen kazanır ve krupiye ikinci kartını göstermeden kaybeder.
+
+### İstisna
+
+Krupiye ilk kartı 10, resim veya as ise, Krupiye da bir blackjack'i olma olasılığı yüksektir. Bu durumda:
+- Krupiyenin ilk kartı As ise, krupiye oyuncunun kazancını 1:1 oranla almayı teklif edecek veya krupiye ikinci kartını gösterecektir.
+- Eğer krupiyenin ilk kartı 10 veya resim ise, krupiye ikinci kartını gösterecektir.
+Krupiyenin ikinci kartı açıklandıktan sonra, eğer oyuncunun Blackjack'i varsa ve krupiyenin Blackjack'i yoksa, oyuncu kazancını 3:2 oranla alır. Eğer krupiyenin de Blackjack'i varsa, oyun berabere biter ve oyuncu bahsini geri alır.
+
+<Aside>
+Örneğin:
+
+1) Bir oyuncu 100$ yatırır. El dağıtıldığında, oyuncu Blackjack alır ve krupiyenin ilk kartı 7'dir. Oyuncu kazanır ve krupiye ikinci kartını göstermeden hemen 250$ (3:2 oranla) alır.
+2) Bir oyuncu 100$ yatırır. El dağıtıldığında, oyuncu Blackjack alır ve krupiye ilk As kartını alır. Oyuncu kazancını 1:1 oranla alabilir, sonra 200$ alır veya krupiye ikinci kartını gösterir. Eğer krupiyenin ikinci kartında Blackjack yoksa oyuncuya 250$ ödenir. Eğer dağıtıcıda Blackjack varsa oyun berabere biter ve oyuncu 100$'lık bahsini geri alır.
+3) Bir oyuncu 100$ yatırır. Blackjack alırsa ve krupiye ilk kart olan 10'u alırsa. Bu durumda dağıtıcı ikinci kartını gösterir. Krupiye ikinci kartını açıkladıktan sonra Blackjack'i yoksa oyuncu 250$ kazanır. Eğer krupiyenin Blackjack'i varsa oyun berabere biter ve oyuncunun 100$'lık bahsi iade edilir.
+</Aside>
+
+## Sigorta
+
+Oyunun bir özelliği de krupiyenin ilk kartının As olması ve oyuncunun Blackjack'i olmaması durumunda krupiyenin Blackjack sigortası teklif etmesidir. Bu durumda, sigorta bahsi oyuncunun orijinal bahsinin yarısı kadardır. Krupiye Blackjack yaparsa, oyuncu ilk bahsini kaybeder, ancak sigorta 2:1 oranla tetiklenir.
+
+<Aside>
+Örneğin:
+
+bir oyuncu 100$ yatırır. Krupiyenin ilk kartı as ve oyuncunun blackjack'i yok. Krupiye oyuncuya sigorta teklif eder. Oyuncu kabul ederse, sigortası 50$'dır. Eğer dağıtıcı bir Blackjack elde ederse - oyuncu 100$'lık ilk bahsini kaybeder, ancak sigorta tetiklenir ve oyuncu 150$ alır. Yani oyuncu hiçbir şey kaybetmemiştir.
+</Aside>
+Krupiye

@@ -1,0 +1,90 @@
+---
+title: Blackjack
+description: O blackjack é um jogo de cartas com regras simples que pode jogar online gratuitamente e sem necessidade de registo.
+hero:
+  tagline: O Blackjack é um jogo de cartas emblemático no mundo do entretenimento, devido às suas regras simples e à sua natureza dinâmica.
+  image:
+    file: ../../../../assets/blackjack_hero_image.png
+    alt: Blackjack Card Game
+  actions:
+    - text: Jogar
+      link: /blackjack/start
+      icon: right-arrow
+---
+
+import YandexMetrika from '../../../../components/YandexMetrika.astro';
+import { Aside } from '@astrojs/starlight/components';
+
+<YandexMetrika />
+
+## As regras do jogo
+
+O objetivo do jogo é vencer o crupiê, criando uma combinação de cartas que não totalize mais de 21 pontos, mas que ainda assim exceda o total do crupiê.
+
+## Sistema de pontuação das cartas
+
+As cartas de dois a dez valem o seu valor facial; o Valete, a Dama e o Rei valem 10 pontos, e o Ás é único, dependendo da situação: desde que a pontuação total não exceda 21, o Ás vale 11; se a pontuação total exceder 21, o Ás vale 1.
+
+## Início do jogo
+
+A combinação de cartas que um jogador recolhe é chamada de “Mão”.
+
+A ação do jogo começa com o jogador a fazer uma aposta. O dealer dá então duas cartas viradas para cima ao jogador e uma carta virada para cima e outra para baixo a si próprio. O jogador tem as seguintes opções:
+- Ficar com as cartas atuais, premindo o botão STAND;
+- Tirar cartas adicionais, premindo o botão HIT;
+- Duplicar a aposta, premindo o botão DOUBLE;
+- Dividir um par de cartas idênticas, premindo o botão SPLIT.
+
+## Double
+
+Após a distribuição das cartas, um jogador pode duplicar a sua aposta em qualquer mão, exceto no Blackjack (uma combinação de duas cartas totalizando 21). Neste caso, o jogador receberá apenas uma carta adicional.
+
+## Split
+
+Se um jogador receber duas cartas idênticas, por exemplo, 2 e 2, 10 e 10, Ás e Ás, ou duas figuras que não são necessariamente iguais, e tiver dinheiro suficiente para repetir a aposta, pode dividir o par em duas mãos. Neste caso, o jogador faz outra aposta igual à aposta atual. O jogo prossegue depois com cada mão separadamente.
+
+## Contagem dos resultados
+
+Quando o jogador toma uma decisão, o crupiê revela a sua segunda carta.
+
+Se o jogador fizer overcalls, a sua aposta perde. Se o dealer fizer overcalls, o jogador ganha com odds de 1:1.
+
+<Aside>
+Por exemplo:
+
+Um jogador aposta 100 $ e obtém 22 ou mais pontos. Perde a sua aposta de 100 $. Se o dealer estiver na mesma situação, o jogador ganha 200 $.
+</Aside>
+Se o jogador e o dealer empatarem, ou seja, se tiverem a mesma pontuação, o jogador recebe a sua aposta de volta. Em suma, o jogador não perdeu nada, mas também não ganhou.
+
+## Situação especial
+
+O Blackjack é uma combinação das duas primeiras cartas que totalizam 21 pontos, por exemplo, uma Dama e um Ás.
+
+Uma combinação de cartas que totalize 21 pontos, mas que tenha mais de duas cartas, não é Blackjack. Por conseguinte, se o jogador tiver 21 pontos e o croupier tiver um "Blackjack", o croupier ganha, mesmo que tenham o mesmo número de pontos.
+
+Se um jogador tiver um Blackjack, a sua aposta é multiplicada por um e meio, ou seja, ganha imediatamente com odds (3:2) e o dealer perde sem mostrar a sua segunda carta.
+
+### Exceção:
+
+Se a primeira carta do dealer for um 10, uma figura ou um ás, há uma grande probabilidade de o dealer também ter um blackjack. Neste caso:
+- Se a primeira carta do dealer for um Ás, o dealer oferecer-se-á para ficar com os ganhos do jogador com odds de 1:1, ou o dealer revelará a sua segunda carta.
+- Se a primeira carta do dealer for um 10 ou uma figura, o dealer revelará a sua segunda carta.
+Após a revelação da segunda carta do dealer, se o jogador tiver um Blackjack e o dealer não tiver, o jogador recebe os ganhos com odds de 3:2. Se o crupiê também tiver um blackjack, o jogo é um empate e o jogador recebe a sua aposta de volta.
+
+<Aside>
+Por exemplo:
+
+1) Um jogador aposta 100 $. Quando a mão é distribuída, o jogador recebe um Blackjack e a primeira carta do dealer é 7. O jogador ganha e recebe imediatamente 250 $ (com probabilidades de 3:2) sem que o dealer mostre a sua segunda carta.
+2) Um jogador aposta 100 $. Quando a mão é distribuída, o jogador recebe um Blackjack e o dealer recebe o Ás como primeira carta. O jogador pode receber o prémio com uma probabilidade de 1:1, recebendo 200 $, ou o dealer revela a sua segunda carta. Se o dealer não tiver um Blackjack na segunda revelação, o jogador recebe 250 $. Se o dealer tiver um Blackjack, o jogo é um empate e o jogador recebe de volta a sua aposta de 100 $.
+3) Um jogador aposta 100 $. Se obtiver um Blackjack e o crupiê receber a primeira carta, um 10, neste caso, o crupiê revela a sua segunda carta. Se o croupier não tiver um Blackjack após a revelação da segunda carta, o jogador ganha 250 $. Se o crupiê tiver um Blackjack, o jogo é um empate e a aposta do jogador de 100 $ é devolvida.
+</Aside>
+
+## Seguro
+
+Uma característica especial do jogo é o seguro de Blackjack que o crupiê oferece se a primeira carta do crupiê for um Ás e o jogador não tiver Blackjack. Neste caso, a aposta do seguro corresponde a metade da aposta inicial do jogador. Se o croupier tiver um Blackjack, o jogador perde a aposta inicial, mas o seguro é acionado com uma probabilidade de 2:1.
+
+<Aside>
+Por exemplo:
+
+Um jogador aposta 100 $. A primeira carta do crupiê é um ás e o jogador não tem um blackjack. O croupier oferece ao jogador a opção de seguro. Se o jogador aceitar, o valor do seguro é de 50 $. Se o croupier tiver um Blackjack, o jogador perde a aposta inicial de 100 $, mas o seguro é acionado e o jogador recebe 150 $. Portanto, o jogador não perde nada.
+</Aside>

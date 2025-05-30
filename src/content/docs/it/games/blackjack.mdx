@@ -1,0 +1,93 @@
+---
+title: Blackjack
+description: Il blackjack è un gioco di carte con regole semplici che si può giocare online gratuitamente e senza registrazione.
+hero:
+  tagline: Il blackjack è un gioco di carte iconico nel mondo dell'intrattenimento videoludico, grazie alle sue regole semplici e alla sua natura dinamica.
+  image:
+    file: ../../../../assets/blackjack_hero_image.png
+    alt: Blackjack Card Game
+  actions:
+    - text: Gioco
+      link: /blackjack/start
+      icon: right-arrow
+---
+
+import YandexMetrika from '../../../../components/YandexMetrika.astro';
+import { Aside } from '@astrojs/starlight/components';
+
+<YandexMetrika />
+
+## Le regole del gioco 
+
+Lo scopo del gioco è battere il croupier realizzando una combinazione di carte che non superi i 21 punti, ma che sia comunque superiore al totale del croupier.
+
+## Sistema di punteggio delle carte
+
+Le carte dal due al dieci valgono il loro valore nominale; il Fante, la Regina e il Re valgono 10 punti, mentre l'Asso è unico nel suo genere e può valere uno o undici punti, a seconda della situazione: finché il punteggio totale non supera 21, l'Asso vale 11, mentre se il punteggio totale supera 21, l'Asso vale 1.
+
+## Inizio della partita
+
+La combinazione di carte che un giocatore raccoglie è chiamata “mano”.
+
+L'azione di gioco inizia con il piazzamento di una puntata da parte del giocatore. Il mazziere distribuisce quindi due carte scoperte al giocatore e una carta scoperta e una coperta a se stesso.
+Il giocatore può scegliere di:
+- restare con le carte attuali premendo il pulsante STAND;
+- prendere altre carte premendo il pulsante HIT;
+- raddoppiare la puntata premendo il pulsante DOUBLE;
+- dividere una coppia di carte identiche premendo il pulsante SPLIT.
+
+## Raddoppio della puntata
+
+Dopo la distribuzione delle carte, il giocatore può raddoppiare la puntata su qualsiasi mano, eccetto il Blackjack (una combinazione di due carte per un totale di 21). In questo caso, al giocatore verrà distribuita solo una carta aggiuntiva.
+
+## Dividere le carte
+
+Se al giocatore vengono distribuite due carte identiche, ad esempio 2 e 2, 10 e 10, Asso e Asso, o due figure non necessariamente uguali, e il giocatore ha abbastanza denaro per ripetere la puntata, può dividerle in due mani. In questo caso, il giocatore deve effettuare un'altra puntata pari a quella attuale. Il gioco prosegue poi con ogni mano separatamente.
+
+## Conteggio dei risultati
+
+Quando il giocatore prende una decisione, il croupier rivela la sua seconda carta.
+
+Se il giocatore dichiara di aver effettuato un overcall, la sua puntata viene persa. Se il mazziere fa overcall, il giocatore vince con una quota di 1:1.
+
+<Aside>
+Ad esempio:
+
+Un giocatore punta 100 $ e ottiene 22 o più punti. Perde la puntata di 100 $. Se il croupier si trova nella stessa situazione, il giocatore vince 200 $.
+</Aside>
+
+Se il giocatore e il croupier pareggiano, cioè se ottengono lo stesso punteggio, il giocatore recupera la sua puntata. In altre parole, non si è perso nulla, né si è vinto.
+
+## Situazione speciale
+
+Il blackjack è una combinazione delle prime due carte che totalizzano 21 punti, come una Regina e un Asso.
+
+Una combinazione di carte che totalizza 21 punti, ma che ha più di due carte, non è un blackjack. Pertanto, se il giocatore ha 21 punti e il croupier ha un Blackjack, il croupier vince comunque.
+
+Se il giocatore ha un Blackjack, la sua puntata viene moltiplicata per uno e mezzo, cioè vince immediatamente a quota (3:2) e il croupier perde senza mostrare la seconda carta.
+
+### Eccezione
+
+Se la prima carta del croupier è un 10, una figura o un asso, c'è una probabilità elevata che anche il croupier abbia un blackjack. In questo caso:
+- se la prima carta del croupier è un asso, il croupier si offrirà di prendere le vincite del giocatore con una quota di 1:1, oppure il croupier rivelerà la sua seconda carta;
+- Se la prima carta del croupier è un 10 o una figura, il croupier scoprirà la sua seconda carta.
+
+Dopo la scoperta della seconda carta del croupier, se il giocatore ha un Blackjack e il croupier non ha un Blackjack, il giocatore riceve la vincita con una quota di 3:2. Se anche il croupier ha un Blackjack, la vincita è di 3:1. Se anche il croupier ha un Blackjack, la partita è in pareggio e il giocatore recupera la sua puntata.
+
+<Aside>
+Ad esempio:
+
+1) Un giocatore scommette 100 $. Quando la mano viene distribuita, il giocatore ottiene un blackjack e la prima carta del croupier è un 7. Il giocatore vince e riceve immediatamente 250 $ (con una quota di 3:2) senza che il croupier mostri la sua seconda carta.
+2) Un giocatore punta 100 $. Quando viene distribuita la mano, il giocatore ottiene il Blackjack e il croupier la prima carta con l'Asso. Il giocatore può prendere la sua vincita con una quota di 1:1, quindi riceve 200 $, oppure il croupier rivela la sua seconda carta. Se il croupier non ha un Blackjack alla seconda scoperta, il giocatore riceve 250 $. Se il croupier ha un Blackjack, la partita è in pareggio e il giocatore riceve indietro i 100 $ scommessi.
+3) Un giocatore punta 100 $. Se ottiene un Blackjack e il croupier ottiene la prima carta, un 10. In questo caso, il croupier rivela la sua seconda carta. Se il croupier non ha un Blackjack dopo aver rivelato la seconda carta, il giocatore vince 250 $. Se il croupier ha un Blackjack, la partita è in pareggio e la puntata del giocatore di 100 $ viene restituita.
+</Aside>
+
+## Assicurazione
+
+Una caratteristica speciale del gioco è l'offerta da parte del croupier di un'assicurazione per il Blackjack se la prima carta del croupier è un Asso e il giocatore non ha un Blackjack. In questo caso, la puntata dell'assicurazione equivale alla metà della puntata iniziale del giocatore. Se il croupier ottiene un Blackjack, il giocatore perde la puntata iniziale, ma l'assicurazione viene attivata con una quota di 2:1.
+
+<Aside>
+Ad esempio:
+
+Un giocatore punta 100 $. La prima carta del croupier è un asso e il giocatore non ha un blackjack. Il croupier offre al giocatore un'assicurazione. Se il giocatore accetta, la sua assicurazione è di 50 $. Se il croupier ottiene un blackjack, il giocatore perde la puntata iniziale di 100 $, ma l'assicurazione scatta e il giocatore riceve 150 $. Quindi, il giocatore non ha perso nulla.
+</Aside>

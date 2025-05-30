@@ -1,0 +1,97 @@
+---
+title: Blackjack
+description: Blackjack là một trò chơi bài với các quy tắc đơn giản mà bạn có thể chơi trực tuyến miễn phí và không cần đăng ký.
+hero:
+  tagline: Blackjack là một trò chơi bài mang tính biểu tượng trong thế giới giải trí trò chơi do các quy tắc đơn giản và tính chất năng động của nó.
+  image:
+    file: ../../../../assets/blackjack_hero_image.png
+    alt: Blackjack Card Game
+  actions:
+    - text: Chơi
+      link: /blackjack/start
+      icon: right-arrow
+---
+
+import YandexMetrika from '../../../../components/YandexMetrika.astro';
+import { Aside } from '@astrojs/starlight/components';
+
+<YandexMetrika />
+
+# Xì dách
+
+Blackjack là một trò chơi bài mang tính biểu tượng trong thế giới giải trí trò chơi do các quy tắc đơn giản và tính chất năng động của nó.
+ 
+## Các quy tắc của trò chơi
+
+Đối tượng của trò chơi là để đánh bại các đại lý bằng cách làm cho một sự kết hợp của thẻ mà không tổng cộng hơn 21 điểm, nhưng vẫn vượt quá tổng số của đại lý.
+
+## Hệ thống tính điểm thẻ
+
+Thẻ từ hai đến mười có giá trị mệnh giá của chúng; Jack, Queen và King có giá trị 10 điểm và Ace là duy nhất - nó có thể được tính là một hoặc mười một điểm, tùy thuộc vào tình huống: miễn là tổng số điểm không vượt quá 21, Ace có giá trị 11 và nếu tổng số điểm vượt quá 21.
+
+## Bắt đầu trò chơi
+
+Sự kết hợp của các thẻ mà người chơi thu thập được gọi là 'Bàn tay'.
+
+Hành động trò chơi bắt đầu với việc người chơi đặt cược. Các đại lý sau đó giao dịch hai mặt lên thẻ cho người chơi và một mặt lên và một mặt xuống thẻ cho chính mình. Người chơi có tùy chọn để
+- đứng với các thẻ hiện tại bằng cách nhấn NÚT ĐỨNG;
+- lấy thẻ bổ sung bằng cách nhấn NÚT NHẤN;
+- tăng gấp đôi đặt cược bằng cách nhấn NÚT ĐÔI;
+- chia một cặp thẻ giống hệt nhau bằng cách nhấn NÚT CHIA.
+
+## Tăng gấp đôi đặt cược
+
+Sau khi các thẻ đã được xử lý, một cầu thủ có thể tăng gấp đôi đặt cược của mình trên bất kỳ bàn tay ngoại trừ Blackjack (một sự kết hợp của hai thẻ tổng cộng 21). Trong trường hợp này, người chơi sẽ chỉ được chia thêm một thẻ.
+
+## Chia Thẻ
+
+Nếu một người chơi được chia hai thẻ giống hệt nhau, ví dụ: 2 và 2, 10 và 10, Ace và Ace, hoặc hai hình ảnh không nhất thiết phải giống nhau và người chơi có đủ tiền để lặp lại đặt cược, anh ta có thể chia cặp thành hai tay. Trong trường hợp này, người chơi đặt một cược khác bằng với cược hiện tại. Trò chơi sau đó tiếp tục với mỗi tay riêng biệt.
+
+## Đếm kết quả
+
+Khi người chơi đưa ra quyết định, người chia bài sẽ tiết lộ lá bài thứ hai của mình.
+
+Nếu người chơi overcalls, cược của anh ta sẽ thua. Nếu các đại lý overcalls, người chơi thắng tại 1:1 tỷ lệ cược.
+
+<Aside>
+Ví dụ:
+
+Người chơi đặt cược 100 đô la và nhận được 22 điểm trở lên. Anh ta thua cược 100 đô la của mình. Nếu các đại lý là trong tình huống tương tự, người chơi thắng $200.
+</Aside >
+
+Nếu người chơi và người chia bài hòa, tức là người chơi và người chia bài có cùng số điểm, người chơi sẽ được đặt cược trở lại. Nói cách khác, bạn đã không mất bất cứ thứ gì, nhưng bạn cũng chưa thắng.
+
+## Tình Huống Đặc Biệt
+
+Blackjack là một sự kết hợp của hai thẻ đầu tiên tổng cộng 21 điểm, ví dụ Như Một Nữ hoàng và Một Ace.
+
+Một sự kết hợp của thẻ tổng cộng 21 điểm, nhưng có nhiều hơn 2 thẻ, không Phải Là Blackjack. Do đó, nếu người chơi có 21 điểm và người chia Bài Có Blackjack, người chia bài sẽ thắng mặc dù họ có cùng số điểm.
+
+Nếu một người chơi Có Một Blackjack, cược của anh ta được nhân với một rưỡi, tức là anh ta thắng ngay lập tức với tỷ lệ cược (3:2) và người chia bài thua mà không tiết lộ thẻ thứ hai của mình.
+
+### Ngoại lệ
+
+Nếu thẻ đầu tiên của đại lý là 10, một hình ảnh hoặc một ace, có một xác suất cao mà các đại lý cũng sẽ có một blackjack. Trong trường hợp này:
+
+- Nếu thẻ đầu tiên của đại lý Là Ace, đại lý sẽ đề nghị lấy tiền thắng cược của người chơi theo tỷ lệ cược 1:1, hoặc đại lý sẽ tiết lộ thẻ thứ hai của mình.
+- Nếu thẻ đầu tiên của đại lý là 10 hoặc hình ảnh, đại lý sẽ tiết lộ thẻ thứ hai của mình.
+
+Sau khi thẻ thứ hai của đại lý được tiết lộ, nếu người chơi Có Một Blackjack và các đại lý không nhận Được Một Blackjack, người chơi mất tiền thắng cược tại tỷ lệ cược của 3:2. Nếu các đại lý cũng có Một Blackjack, trò chơi là một tie và người chơi được đặt cược của mình trở lại.
+
+<Aside>
+Ví dụ:
+
+1) một cầu thủ cược $100. Khi bàn tay được xử lý, người chơi được Blackjack và thẻ đầu tiên của đại lý là 7. Người chơi thắng và ngay lập tức nhận được $250 (tại 3:2 tỷ lệ cược) mà không có các đại lý tiết lộ thẻ thứ hai của mình.
+2) một cầu thủ cược $100. Khi bàn tay được xử lý, người chơi được Blackjack và các đại lý được thẻ Ace đầu tiên. Người chơi có thể nhận tiền thắng cược của mình với tỷ lệ cược 1:1, sau đó anh ta nhận được 200 đô la hoặc đại lý tiết lộ thẻ thứ hai của mình. Nếu các đại lý không có Một Blackjack trên tiết lộ thứ hai, người chơi được trả $250. Nếu các đại lý không Có Blackjack - trò chơi là một tie và người chơi được $100 cược của mình trở lại.
+3) một cầu thủ cược $100. Nếu anh ta nhận Được Một Blackjack và các đại lý được thẻ đầu tiên, một 10. Trong trường hợp này, đại lý tiết lộ thẻ thứ hai của mình. Nếu các đại lý không có Một Blackjack sau khi tiết lộ thẻ thứ hai của mình, người chơi thắng $250. Nếu các đại lý không Có Blackjack - trò chơi là một tie và đặt cược của người chơi là $100 được trả lại.
+</Aside >
+
+## Bảo hiểm
+
+Một tính năng đặc biệt của trò chơi là cung cấp của đại lý Bảo hiểm Blackjack nếu thẻ đầu tiên của đại lý là Một Ace và người chơi không Có Blackjack. Trong trường hợp này, đặt cược bảo hiểm là một nửa đặt cược ban đầu của người chơi. Nếu các đại lý được Blackjack, người chơi mất cược ban đầu của mình, nhưng bảo hiểm được kích hoạt tại 2:1 tỷ lệ cược.
+
+<Aside >
+Ví dụ:
+
+Một cầu thủ cược $100. Thẻ đầu tiên của đại lý là một ace và người chơi không có một blackjack. Các đại lý cung cấp bảo hiểm người chơi. Nếu người chơi chấp nhận, bảo hiểm của anh ta là 5 50. Nếu các đại lý được Một Blackjack - người chơi mất đặt cược ban đầu của $100, nhưng bảo hiểm được kích hoạt và người chơi được 1 150. Vì vậy, người chơi đã không mất gì.
+</Aside >

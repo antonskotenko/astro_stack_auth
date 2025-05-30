@@ -1,0 +1,91 @@
+---
+title: Blackjack
+description: El blackjack es un juego de cartas con reglas sencillas que puedes jugar gratis y sin registrarte en línea.
+hero:
+  tagline: El blackjack es un juego de cartas icónico en el mundo del entretenimiento debido a sus sencillas reglas y su naturaleza dinámica.
+  image:
+    file: ../../../../assets/blackjack_hero_image.png
+    alt: Blackjack Card Game
+  actions:
+    - text: Jugar
+      link: /blackjack/start
+      icon: right-arrow
+---
+
+import YandexMetrika from '../../../../components/YandexMetrika.astro';
+import { Aside } from '@astrojs/starlight/components';
+
+<YandexMetrika />
+
+## Las reglas del juego
+
+El objetivo del juego es vencer al crupier haciendo una combinación de cartas que no sume más de 21 puntos, pero que aun así supere el total del crupier.
+
+## Sistema de puntuación de las cartas
+
+Las cartas del dos al diez valen su valor nominal; la jota, la reina y el rey valen 10 puntos, y el as es único: puede contar como uno u once puntos, dependiendo de la situación. Si la puntuación total no supera 21, el as vale 11; si la puntuación total supera 21, el as vale 1.
+
+## Inicio del juego
+
+La combinación de cartas que reúne un jugador se denomina «mano».
+
+La acción del juego comienza cuando el jugador realiza una apuesta. A continuación, el crupier reparte dos cartas boca arriba al jugador y una boca arriba y otra boca abajo a sí mismo. El jugador tiene las siguientes opciones:
+- Plantarse con las cartas actuales pulsando el botón «STAND».
+- Coger más cartas pulsando el botón «HIT».
+- Doblar la apuesta pulsando el botón «DOUBLE».
+- Dividir un par de cartas idénticas pulsando el botón «SPLIT».
+
+## Doblar la apuesta
+
+Una vez repartidas las cartas, un jugador puede doblar su apuesta en cualquier mano, excepto en Blackjack (una combinación de dos cartas que suman 21). En este caso, el jugador solo recibirá una carta adicional.
+
+## Dividir un par de cartas 
+
+Si a un jugador se le reparten dos cartas idénticas, por ejemplo, 2 y 2, 10 y 10, As y As, o dos figuras que no son necesariamente iguales, y el jugador tiene suficiente dinero para repetir la apuesta, puede dividir la pareja en dos manos. En este caso, el jugador debe realizar otra apuesta igual a la apuesta inicial. A continuación, el juego continúa con cada mano por separado.
+
+## Contar los resultados
+
+Cuando el jugador toma una decisión, el crupier revela su segunda carta.
+
+Si el jugador se pasa, pierde su apuesta. Si el crupier se pasa, el jugador gana con una cuota de 1:1.
+
+<Aside>
+Por ejemplo:
+
+Si un jugador apuesta 100 $ y obtiene 22 puntos o más, pierde su apuesta. Pierde su apuesta de 100 $. Si el crupier se encuentra en la misma situación, el jugador gana 200 $.
+</Aside>
+
+Si el jugador y el crupier empatan, es decir, si ambos tienen la misma puntuación, el jugador recupera su apuesta. En otras palabras, no ha perdido nada, pero tampoco ha ganado.
+
+## Situación especial
+
+El blackjack es una combinación de las dos primeras cartas que suman 21 puntos, por ejemplo, una reina y un as.
+
+Una combinación de cartas que sume 21 puntos, pero que tenga más de dos cartas, no es Blackjack. Por lo tanto, si el jugador tiene 21 puntos y el crupier tiene Blackjack, el crupier gana aunque tengan el mismo número de puntos.
+
+Si un jugador tiene un Blackjack, su apuesta se multiplica por uno y medio, es decir, gana inmediatamente con una cuota de (3:2) y el crupier pierde sin mostrar su segunda carta.
+
+### Excepción
+
+Si la primera carta del crupier es un 10, una carta de imagen o un as, existe una alta probabilidad de que el crupier también tenga un blackjack. En este caso:
+- Si la primera carta del crupier es un as, el crupier ofrecerá llevarse las ganancias del jugador con una cuota de 1:1 o revelará su segunda carta.
+- Si la primera carta del crupier es un 10 o una carta de imagen, el crupier revelará su segunda carta.
+Después de que se revele la segunda carta del crupier, si el jugador tiene un Blackjack y el crupier no tiene un Blackjack, el jugador se llevará las ganancias con probabilidades de 3:2. Si el crupier también tiene un Blackjack, el juego termina en empate y el jugador recupera su apuesta.
+
+<Aside>
+Por ejemplo:
+
+1) Un jugador apuesta 100 $. Cuando se reparte la mano, el jugador obtiene un blackjack y la primera carta del crupier es un 7. El jugador gana y recibe inmediatamente 250 $ (con probabilidades de 3:2) sin que el crupier muestre su segunda carta.
+2) Un jugador apuesta 100 $. Cuando se reparte la mano, el jugador obtiene blackjack y el crupier la primera carta As. El jugador puede llevarse sus ganancias con probabilidades de 1:1, es decir, 200 $, o el crupier revela su segunda carta. Si el crupier no tiene Blackjack en la segunda carta, el jugador recibe 250 $. Si el crupier tiene Blackjack, la partida es un empate y el jugador recupera sus 100 $ apostados.
+3) Un jugador apuesta 100 $. Si consigue un Blackjack y el crupier saca un 10. En este caso, el crupier revela su segunda carta. Si el crupier no tiene Blackjack después de revelar su segunda carta, el jugador gana 250 $. Si el crupier tiene Blackjack, la partida es un empate y se devuelve la apuesta del jugador de 100 $.
+</Aside>
+
+## Seguro
+
+Una característica especial del juego es que el crupier ofrece un seguro de Blackjack si la primera carta del crupier es un as y el jugador no tiene Blackjack. En este caso, la apuesta del seguro es la mitad de la apuesta original del jugador. Si el crupier consigue Blackjack, el jugador pierde su apuesta inicial, pero el seguro se activa con una probabilidad de 2:1.
+
+<Aside>
+Por ejemplo:
+
+Si un jugador apuesta 100 $. La primera carta del crupier es un as y el jugador no tiene Blackjack. El crupier le ofrece un seguro. Si el jugador acepta, el seguro será de 50 $. Si el crupier obtiene un Blackjack, el jugador pierde la apuesta inicial de 100 $, pero el seguro se activa y el jugador obtiene 150 $. Así que el jugador no ha perdido nada.
+</Aside>

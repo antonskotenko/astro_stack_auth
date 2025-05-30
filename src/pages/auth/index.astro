@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stack Auth JS Examples</title>
+</head>
+<body>
+  <h1>Stack Auth JS Examples</h1>
+  
+  <div id="authOptions">
+    <p>Choose an authentication example:</p>
+    <ul>
+      <li><a href="/otp-sign-in">Sign in with OTP Code</a></li>
+      <li><a href="/oauth">Sign in with Google</a></li>
+    </ul>
+  </div>
+
+  <div id="userInfo" style="display: none;">
+    <h2>User Information</h2>
+    <p>Email: <span id="userEmail"></span></p>
+    <button id="signOut">Sign Out</button>
+  </div>
+</body>
+</html>
+
+<script> 
+import { stackClientApp } from "../../stack/client";
+
+const updateUIState = (user: any | null) => {
+  const authOptions = document.getElementById("authOptions");
+  const userInfo = document.getElementById("userInfo");
+  const userEmailSpan = document.getElementById("userEmail");
+
+  if (user) {
+    if (authOptions) authOptions.style.display = "none";
+    if (userInfo) userInfo.style.display = "block";
+    if (userEmailSpan) userEmailSpan.textContent = user.primaryEmail || "";
+  } else {
+    if (authOptions) authOptions.style.display = "block";
+    if (userInfo) userInfo.style.display = "none";
+  }
+};
+
+// Check if user is already signed in
+stackClientApp.getUser().then(updateUIState);
+
+// Handle Sign Out
+document.getElementById("signOut")?.addEventListener("click", async () => {
+  const user = await stackClientApp.getUser();
+  if (user) {
+    await user.signOut();
+    updateUIState(null);
+  }
+}); 
+</script>

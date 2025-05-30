@@ -1,0 +1,246 @@
+<div class="container">
+  <!-- Blackjack -->
+  <a
+    href="https://www.azart.live/zh/games/blackjack/"
+    hreflang="zh"
+    aria-label="Go to the Blackjack game page"
+    style="display: block;"
+  >
+    <section class="card card-green">
+      <div class="card-image blackjack-card-image-1">
+        <img
+          src="/assets/cards/1h.png"
+          width="144"
+          height="192"
+          alt="The image of the Ace of Hearts playing card on the Blackjack game logo."
+          draggable="false"
+        />
+      </div>
+      <div class="card-image blackjack-card-image-2">
+        <img
+          src="/assets/cards/11c.png"
+          width="144"
+          height="192"
+          alt="The image of the Jack of Clubs playing card on the Blackjack game logo"
+          draggable="false"
+        />
+      </div>
+      <div class="card-image blackjack-name-image">
+        <img
+          src="/assets/blackjack_name_en.png"
+          width="196"
+          height="40"
+          alt="The image with the name on the logo of the Blackjack game"
+          draggable="false"
+        />
+      </div>
+    </section>
+  </a>
+
+  <!-- 21 -->
+  <a
+    href="https://www.azart.live/zh/games/21/"
+    hreflang="zh"
+    aria-label="Go to the 21 game page"
+    style="display: block;"
+  >
+    <section class="card card-blue">
+      <div class="card-image twenty-one-card-image-1">
+        <img
+          src="/assets/cards/1d.png"
+          width="144"
+          height="192"
+          alt="The image of the Ace of Diamonds playing card on the 21 game logo"
+          draggable="false"
+        />
+      </div>
+      <div class="card-image twenty-one-card-image-2">
+        <img
+          src="/assets/cards/1s.png"
+          width="144"
+          height="192"
+          alt="The image of the Ace of Spades playing card on the 21 game logo"
+          draggable="false"
+        />
+      </div>
+      <div class="card-image twenty-one-name-image">
+        <img
+          src="/assets/twenty-one_name.png"
+          width="96"
+          height="96"
+          alt="The image with the name on the logo of the 21 game"
+          draggable="false"
+        />
+      </div>
+    </section>
+  </a>
+
+  <!-- Spider -->
+  <a
+    href="https://www.azart.live/zh/games/spider/"
+    hreflang="zh"
+    aria-label="Go to the Spider game page"
+    style="display: block;"
+  >
+    <section class="card card-red">
+      <div class="card-image spider-card-image-1">
+        <img
+          src="/assets/cards/1h.png"
+          width="144"
+          height="192"
+          alt="The image of the Ace of Hearts playing card on the Spider game logo."
+          draggable="false"
+        />
+      </div>
+      <div class="card-image spider-card-image-2">
+        <img
+          src="/assets/cards/13s.png"
+          width="144"
+          height="192"
+          alt="The image of the King of Spades playing card on the Spider game logo"
+          draggable="false"
+        />
+      </div>
+      <div class="card-image spider-name-image">
+        <img
+          src="/assets/spider_name_en.png"
+          width="139"
+          height="40"
+          alt="The image with the name on the logo of the Spider game"
+          draggable="false"
+        />
+      </div>
+    </section>
+  </a>
+</div>
+
+<style>
+  :root {
+    --green-card: #004f3b;
+    --blue-card: #1e3a8a;
+    --red-card: #701a75;
+  }
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .card {
+    width: 14rem;
+    height: 14rem;
+    margin-top: 1rem;
+    box-shadow: -2px 16px 28px -8px rgb(32, 32, 32);
+    border-radius: 7rem;
+    cursor: pointer;
+  }
+
+  .card-green {
+    background: var(--green-card);
+  }
+
+  .card-blue {
+    background: var(--blue-card);
+  }
+
+  .card-red {
+    background: var(--red-card);
+  }
+
+  .card-image {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 1rem;
+    filter: drop-shadow(4px 10px 16px rgba(8, 9, 13, 0.4));
+    transform: translate(1rem, 0rem);
+    transition: transform 200ms ease-in-out;
+  }
+
+  /* Blackjack style */
+  .blackjack-card-image-1 {
+    transform: translate(1rem, 0rem) rotate(-8deg);
+    transition: transform 200ms ease-in-out;
+  }
+
+  .blackjack-card-image-2 {
+    transform: translate(4rem, -12rem) rotate(12deg);
+    transition: transform 200ms ease-in-out;
+  }
+
+  .blackjack-name-image {
+    transform: translate(1rem, -20rem);
+    transition: transform 500ms ease-in-out;
+  }
+
+  .card:hover .blackjack-card-image-1 {
+    transform: translate(0rem, 0rem) rotate(-20deg);
+  }
+
+  .card:hover .blackjack-card-image-2 {
+    transform: translate(4rem, -12rem) rotate(20deg);
+  }
+
+  .card:hover .blackjack-name-image {
+    transform: translate(-1rem, -20rem);
+  }
+
+  /* 21 style */
+  .twenty-one-card-image-1 {
+    transform: translate(1rem, -1rem) rotate(-4deg);
+    transition: transform 200ms ease-in-out;
+  }
+
+  .twenty-one-card-image-2 {
+    transform: translate(5rem, -12rem) rotate(8deg);
+    transition: transform 200ms ease-in-out;
+  }
+
+  .twenty-one-name-image {
+    transform: translate(2rem, -20rem);
+    transition: transform 500ms ease-in-out;
+  }
+
+  .card:hover .twenty-one-card-image-1 {
+    transform: translate(1rem, 1rem) rotate(-16deg);
+  }
+
+  .card:hover .twenty-one-card-image-2 {
+    transform: translate(4rem, -14rem) rotate(18deg);
+  }
+
+  .card:hover .twenty-one-name-image {
+    transform: translate(2rem, -19rem) scale(0.8);
+  }
+
+  /* Spider style */
+  .spider-card-image-1 {
+    transform: translate(1rem, -1rem);
+    transition: transform 200ms ease-in-out;
+  }
+
+  .spider-card-image-2 {
+    transform: translate(5rem, -11rem);
+    transition: transform 200ms ease-in-out;
+  }
+
+  .spider-name-image {
+    transform: translate(2rem, -19rem);
+    transition: transform 500ms ease-in-out;
+  }
+
+  .card:hover .spider-card-image-1 {
+    transform: translate(2rem, 0rem);
+  }
+
+  .card:hover .spider-card-image-2 {
+    transform: translate(4rem, -12rem);
+  }
+
+  .card:hover .spider-name-image {
+    transform: translate(2rem, -21rem);
+  }
+</style>

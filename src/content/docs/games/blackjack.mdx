@@ -1,0 +1,93 @@
+---
+title: Blackjack
+description: Blackjack is a card game with simple rules that you can play online for free and without registering.
+hero:
+  tagline: Blackjack is an iconic card game in the world of gaming entertainment due to its simple rules and dynamic nature.
+  image:
+    file: ../../../assets/blackjack_hero_image.png
+    alt: Blackjack Card Game
+  actions:
+    - text: Play
+      link: /blackjack/start
+      icon: right-arrow
+---
+
+import YandexMetrika from '../../../components/YandexMetrika.astro';
+import { Aside } from '@astrojs/starlight/components';
+
+<YandexMetrika />
+
+## The rules of the game
+
+The object of the game is to beat the dealer by making a combination of cards that does not total more than 21 points, but still exceeds the dealer's total.
+
+## Card scoring system
+
+Cards from two to ten are worth their face value; Jack, Queen and King are worth 10 points, and the Ace is unique - it can count as either one or eleven points, depending on the situation: as long as the total score does not exceed 21, the Ace is worth 11, and if the total score exceeds 21, the Ace is worth 1.
+
+## Starting the game
+
+The combination of cards a player collects is called a 'Hand'.
+
+The game action begins with the player placing a bet. The dealer then deals two face up cards to the player and one face up and one face down card to himself. The player has the option to
+- stand with the current cards by pressing the STAND button;
+- take additional cards by pressing the HIT button;
+- double the bet by pressing the DOUBLE button;
+- split a pair of identical cards by pressing the SPLIT button.
+
+## Doubling the bet
+
+After the cards have been dealt, a player may double his bet on any hand except Blackjack (a combination of two cards totaling 21). In this case, the player will only be dealt one additional card.
+
+## Card Split
+
+If a player is dealt two identical cards, e.g. 2 and 2, 10 and 10, Ace and Ace, or two pictures that are not necessarily the same, and the player has enough money to repeat the bet, he can split the pair into two hands. In this case, the player places another bet equal to the current bet. The game then continues with each hand separately.
+
+## Counting the results
+
+When the player makes a decision, the dealer reveals his second card.
+
+If the player overcalls, his bet loses. If the dealer overcalls, the player wins at 1:1 odds.
+
+<Aside>
+For example:
+
+A player bets $100 and gets 22 or more points. He loses his $100 bet. If the dealer is in the same situation, the player wins $200.
+</Aside>
+
+If the player and dealer tie, i.e. the player and dealer have the same score, the player gets his bet back. In other words, you have not lost anything, but you have not won either.
+
+## Special Situation
+
+Blackjack is a combination of the first two cards totaling 21 points, for example a Queen and an Ace.
+
+A combination of cards that totals 21 points, but has more than 2 cards, is not Blackjack. Therefore, if the player has 21 points and the dealer has Blackjack, the dealer wins even though they have the same number of points.
+
+If a player has a Blackjack, his wager is multiplied by one and a half, i.e. he wins immediately at odds (3:2) and the dealer loses without revealing his second card.
+
+### Exception
+
+If the dealer's first card is a 10, a picture or an ace, there is a high probability that the dealer will also have a blackjack. In this case:
+
+- If the dealer's first card is an Ace, the dealer will offer to take the player's winnings at odds of 1:1, or the dealer will reveal his second card.
+- If the dealer's first card is a 10 or a picture, the dealer will reveal his second card.
+
+After the dealer's second card is revealed, if the player has a Blackjack and the dealer does not get a Blackjack, the player takes the winnings at odds of 3:2. If the dealer also has a Blackjack, the game is a tie and the player gets his bet back.
+
+<Aside>
+For example:
+
+1) A player bets $100. When the hand is dealt, the player gets Blackjack and the dealer's first card is 7. The player wins and immediately receives $250 (at 3:2 odds) without the dealer revealing his second card.
+2) A player bets $100. When the hand is dealt, the player gets Blackjack and the dealer gets the first Ace card. The player can take his winnings at 1:1 odds, then he gets $200, or the dealer reveals his second card. If the dealer does not have a Blackjack on the second reveal, the player is paid $250. If the dealer does have Blackjack - the game is a tie and the player gets his $100 wager back.
+3) A player bets $100. If he gets a Blackjack and the dealer gets the first card, a 10. In this case, the dealer reveals his second card. If the dealer does not have a Blackjack after revealing his second card, the player wins $250. If the dealer does have Blackjack - the game is a tie and the player's bet of $100 is returned. 
+</Aside>
+
+## Insurance
+
+A special feature of the game is the dealer's offer of Blackjack insurance if the dealer's first card is an Ace and the player does not have Blackjack. In this case, the insurance bet is half the player's original bet. If the dealer gets Blackjack, the player loses his initial bet, but the insurance is triggered at 2:1 odds.
+
+<Aside>
+For example:
+
+A player bets $100. The dealer's first card is an ace and the player does not have a blackjack. The dealer offers the player insurance. If the player accepts, his insurance is $50. If the dealer gets a Blackjack - the player loses the initial bet of $100, but the insurance is triggered and the player gets $150. So the player has lost nothing.
+</Aside>

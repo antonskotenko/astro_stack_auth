@@ -1,0 +1,6 @@
+:root {
+  --sl-font: 'alsContract';
+  --sl-text-xs: 1rem; /* 13px */
+  --sl-text-sm: 1.25rem; /* 14px */
+  --sl-text-base: 1.5rem; /* 16px */
+}

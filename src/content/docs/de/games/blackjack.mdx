@@ -1,0 +1,88 @@
+---
+title: Blackjack
+description: Blackjack ist ein Kartenspiel mit einfachen Regeln, das kostenlos und ohne Anmeldung online gespielt werden kann.
+hero:
+  tagline: Blackjack ist aufgrund seiner einfachen Regeln und seines dynamischen Charakters eine Ikone in der Welt der Unterhaltungsspiele.
+  image:
+    file: ../../../../assets/blackjack_hero_image.png
+    alt: Blackjack Card Game
+  actions:
+    - text: Spielen
+      link: /blackjack/start
+      icon: right-arrow
+---
+
+import YandexMetrika from '../../../../components/YandexMetrika.astro';
+import { Aside } from '@astrojs/starlight/components';
+
+<YandexMetrika />
+
+## Die Regeln des Spiels
+
+Ziel des Spiels ist es, den Dealer zu schlagen, indem man eine Kartenkombination zusammenstellt, die nicht mehr als 21 Punkte ergibt, aber dennoch höher ist als die Summe des Dealers.
+
+## Punktesystem der Karten
+
+Die Karten von zwei bis zehn sind ihren Nennwert wert; Bube, Dame und König sind 10 Punkte wert, und das Ass ist einzigartig - es kann je nach Situation einen oder elf Punkte wert sein: Solange die Gesamtpunktzahl 21 nicht übersteigt, ist das Ass 11 Punkte wert; übersteigt die Gesamtpunktzahl 21, ist das Ass 1 Punkt wert.
+
+## Beginn des Spiels
+
+Spielbeginn Die Kartenkombination, die ein Spieler sammelt, wird als „Hand“ bezeichnet.
+Das Spiel beginnt damit, dass der Spieler einen Einsatz macht. Anschließend teilt der Kartendealer dem Spieler zwei offene Karten und sich selbst eine offene und eine verdeckte Karte aus. Der Spieler hat die Möglichkeit
+- mit den aktuellen Karten zu bleiben, indem er die STAND-Taste drückt;
+- weitere Karten zu ziehen, indem er die HIT-Taste drückt;
+- den Einsatz zu verdoppeln, indem er die DOUBLE-Taste drückt;
+- ein Paar identischer Karten zu teilen, indem er die SPLIT-Taste drückt.
+
+## Verdoppelung des Einsatzes
+
+Nachdem die Karten ausgeteilt wurden, kann der Spieler seinen Einsatz bei jeder Hand verdoppeln, außer bei Blackjack (eine Kombination von zwei Karten, die insgesamt 21 ergibt). In diesem Fall erhält der Spieler nur eine zusätzliche Karte.
+
+## Kartensplit
+
+Wenn ein Spieler zwei identische Karten erhält, z. B. 2 und 2, 10 und 10, Ass und Ass, oder zwei Bilder, die nicht notwendigerweise identisch sind, und der Spieler genug Geld hat, um den Einsatz zu wiederholen, kann er das Paar in zwei Hände aufteilen. In diesem Fall platziert der Spieler einen weiteren Einsatz in Höhe des aktuellen Einsatzes. Das Spiel wird dann mit jedem Blatt einzeln fortgesetzt.
+
+## Zählen der Ergebnisse
+
+Wenn der Spieler eine Entscheidung getroffen hat, deckt der Dealer seine zweite Karte auf.
+
+Wenn der Spieler overcallt, verliert er seinen Einsatz. Wenn der Dealer overcallt, gewinnt der Spieler mit einer Quote von 1:1.
+
+<Aside>
+Zum Beispiel:
+
+Ein Spieler setzt $100 und erhält 22 oder mehr Punkte. Er verliert seinen Einsatz von $100. Wenn der Dealer in der gleichen Situation ist, gewinnt der Spieler $200. Bei einem Unentschieden, d.h. wenn der Spieler und der Dealer die gleiche Punktzahl haben, erhält der Spieler seinen Einsatz zurück. Man hat also nichts verloren, aber auch nichts gewonnen.
+</Aside>
+
+## Besondere Situation
+
+Blackjack ist eine Kombination aus den ersten beiden Karten, die zusammen 21 Punkte ergeben, zum Beispiel eine Dame und ein Ass.
+
+Eine Kartenkombination, die insgesamt 21 Punkte ergibt, aber mehr als 2 Karten enthält, ist kein Blackjack. Wenn also ein Spieler 21 Punkte hat und der Dealer einen Blackjack, gewinnt der Dealer, auch wenn beide die gleiche Punktzahl haben.
+
+Wenn ein Spieler einen Blackjack hat, wird sein Einsatz mit 1,5 multipliziert, d.h. er gewinnt sofort mit einer Quote von 3:2 und der Dealer verliert, ohne seine zweite Karte gezeigt zu haben.
+
+### Ausnahmen
+
+Wenn die erste Karte des Dealers eine 10, ein Bild oder ein Ass ist, besteht eine hohe Wahrscheinlichkeit, dass der Dealer auch einen Blackjack hat. In diesem Fall:
+- Wenn die erste Karte des Dealers ein Ass ist, bietet der Dealer an, den Gewinn des Spielers im Verhältnis 1:1 zu übernehmen, oder der Dealer deckt seine zweite Karte auf. 
+- Ist die erste Karte des Kartendealer eine 10 oder ein Bild, deckt der Kartendealer seine zweite Karte auf.
+Hat der Spieler nach dem Aufdecken der zweiten Karte des Dealers einen Blackjack und der Dealer keinen Blackjack, erhält der Spieler den Gewinn im Verhältnis 3:2. Hat der Dealer ebenfalls einen Blackjack, ist das Spiel unentschieden und der Spieler erhält seinen Einsatz zurück.
+
+<Aside>
+Zum Beispiel:
+
+1) Ein Spieler setzt $100. Wenn das Blatt ausgeteilt wird, erhält der Spieler einen Blackjack und die erste Karte des Dealers ist eine 7. Der Spieler gewinnt und erhält sofort $250 (bei einer Quote von 3:2), ohne dass der Dealer seine zweite Karte zeigt.
+2) Ein Spieler setzt $100, die Hand wird ausgeteilt, der Spieler erhält einen Blackjack und die erste Karte des Dealers ist ein Ass. Der Spieler kann seinen Gewinn bei einer Quote von 1:1 mitnehmen, dann erhält er $200, oder der Dealer deckt seine zweite Karte auf. Hat der Dealer beim zweiten Aufdecken keinen Blackjack, erhält der Spieler $250. Hat der Dealer einen Blackjack, ist das Spiel unentschieden und der Spieler erhält seinen Einsatz von $100 zurück.
+3) Ein Spieler setzt $100, wenn er einen Blackjack hat und der Dealer die erste Karte, eine 10, aufdeckt. In diesem Fall deckt der Dealer seine zweite Karte auf. Wenn der Dealer nach dem Aufdecken seiner zweiten Karte keinen Blackjack hat, gewinnt der Spieler $250. Hat der Dealer einen Blackjack, ist das Spiel unentschieden und der Spieler erhält seinen Einsatz von 100 $ zurück.
+</Aside>
+
+## Versicherung
+
+Eine Besonderheit des Spiels ist, dass der Dealer eine Blackjack-Versicherung anbietet, wenn die erste Karte des Dealers ein Ass ist und der Spieler keinen Blackjack hat. In diesem Fall beträgt der Versicherungseinsatz die Hälfte des ursprünglichen Einsatzes des Spielers. Wenn der Dealer einen Blackjack hat, verliert der Spieler seinen ursprünglichen Einsatz, aber die Versicherung wird mit einer Quote von 2:1 ausbezahlt.
+
+<Aside>
+Zum Beispiel:
+
+Ein Spieler setzt $100. Die erste Karte des Dealers ist ein Ass und der Spieler hat keinen Blackjack. Der Croupier bietet dem Spieler eine Versicherung an. Wenn der Spieler dieses Angebot annimmt, beträgt seine Versicherung $50. Wenn der Dealer einen Blackjack hat, verliert der Spieler seinen ursprünglichen Einsatz von $100, aber die Versicherung wird ausgelöst und der Spieler erhält $150. Der Spieler hat also nichts verloren.
+</Aside>

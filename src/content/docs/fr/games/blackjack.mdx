@@ -1,0 +1,93 @@
+---
+title: Blackjack
+description: Le blackjack est un jeu de cartes aux règles simples que vous pouvez jouer gratuitement et sans inscription en ligne.
+hero:
+  tagline: Le blackjack est un jeu de cartes emblématique dans l'univers des jeux de divertissement grâce à ses règles simples et à son aspect dynamique.
+  image:
+    file: ../../../../assets/blackjack_hero_image.png
+    alt: Blackjack Card Game
+  actions:
+    - text: Jouer
+      link: /blackjack/start
+      icon: right-arrow
+---
+
+import YandexMetrika from '../../../../components/YandexMetrika.astro';
+import { Aside } from '@astrojs/starlight/components';
+
+<YandexMetrika />
+
+## Les règles du jeu
+
+Le but du jeu est de battre le croupier en réalisant une combinaison de cartes dont le total ne dépasse pas 21 points, mais qui est supérieur à celui du croupier.
+
+## Système d'évaluation des cartes
+
+Les cartes de deux à dix valent leur valeur faciale ; le valet, la dame et le roi valent 10 points, et l'as est unique : il peut compter pour un ou onze points, selon la situation. Tant que le score total ne dépasse pas 21, l'as vaut 11, et si le score total dépasse 21, l'as vaut 1.
+
+## Début du jeu
+
+La combinaison de cartes qu'un joueur ramasse est appelée « main ».
+
+Le jeu commence lorsque le joueur a placé sa mise. Le croupier distribue ensuite deux cartes visibles au joueur et une carte visible et une carte cachée à lui-même. Le joueur a la possibilité de :
+- rester avec les cartes actuelles en appuyant sur le bouton STAND ;
+- prendre des cartes supplémentaires en appuyant sur le bouton HIT ;
+- doubler la mise en appuyant sur le bouton DOUBLE ;
+- partager une paire de cartes identiques en appuyant sur le bouton SPLIT.
+
+## Doubler la mise
+
+Une fois les cartes distribuées, un joueur peut doubler sa mise sur n'importe quelle main, à l'exception du Blackjack (une combinaison de deux cartes totalisant 21). Dans ce cas, le joueur ne reçoit qu'une seule carte supplémentaire.
+
+## Partager une paire de cartes
+
+Si un joueur reçoit deux cartes identiques, par exemple 2 et 2, 10 et 10, As et As, ou deux images qui ne sont pas nécessairement identiques, et qu'il a suffisamment d'argent pour répéter la mise, il peut diviser la paire en deux mains. Dans ce cas, le joueur place une nouvelle mise égale à la mise actuelle. Chaque main est ensuite jouée séparément.
+
+## Compter les résultats
+
+Lorsque le joueur prend une décision, le croupier révèle sa deuxième carte.
+
+Si le joueur surenchérit, sa mise est perdue. Si le croupier surenchérit, le joueur gagne avec une cote de 1:1.
+
+<Aside>
+Par exemple:
+
+Si un joueur mise 100 $ et obtient 22 points ou plus, il perd sa mise de 100 $. Si le croupier se trouve dans la même situation, le joueur gagne 200 $.
+</Aside>
+
+Si le joueur et le croupier sont à égalité, c'est-à-dire s'ils obtiennent le même score, le joueur récupère sa mise. En d'autres termes, vous n'avez rien perdu, mais vous n'avez pas non plus gagné.
+
+## Situation particulière
+
+Le blackjack est une combinaison des deux premières cartes totalisant 21 points, par exemple une reine et un as.
+
+Une combinaison de cartes totalisant 21 points, mais qui comporte plus de deux cartes, n'est pas un blackjack. Par conséquent, si le joueur a 21 points et que le croupier a également un Blackjack, c'est ce dernier qui gagne, même s'ils ont le même nombre de points.
+
+Si un joueur a un Blackjack, sa mise est multipliée par 1,5, c'est-à-dire qu'il gagne immédiatement à la cote (3:2) et que le croupier perd sans montrer sa deuxième carte.
+
+### Exception
+
+Si la première carte du croupier est un 10, une image ou un as, il y a une forte probabilité qu'il ait également un blackjack. Dans ce cas :
+
+- Si la première carte du croupier est un as, ce dernier proposera de prendre les gains du joueur à la cote 1:1 ou dévoilera sa deuxième carte.
+- Si la première carte du croupier est un 10 ou une image, le croupier dévoile sa deuxième carte.
+
+Après la révélation de la deuxième carte du croupier, si le joueur a un Blackjack et que le croupier n'en a pas, le joueur remporte les gains à la cote 3:2. Si le croupier a également un blackjack, il y a égalité et le joueur récupère sa mise.
+
+<Aside>
+Par exemple :
+
+1) Un joueur mise 100 $. Lorsque la main est distribuée, le joueur obtient un blackjack et la première carte du croupier est un 7. Le joueur gagne et reçoit immédiatement 250 $ (à une cote de 3:2), sans que le croupier ne montre sa deuxième carte.
+2) Un joueur mise 100 $. Lorsque la main est distribuée, le joueur obtient un blackjack et le croupier reçoit la première carte, un as. Le joueur peut alors prendre ses gains à une cote de 1:1, puis il reçoit 200 $, ou le croupier révèle sa deuxième carte. Si le croupier n'a pas de Blackjack lors de la deuxième révélation, le joueur reçoit 250 $. Si le croupier a un Blackjack, il y a égalité et le joueur récupère sa mise.
+3) Un joueur mise 100 $. S'il obtient un Blackjack et que le croupier reçoit la première carte, un 10. Dans ce cas, le croupier révèle sa deuxième carte. Si le croupier n'a pas de Blackjack après avoir révélé sa deuxième carte, le joueur gagne 250 $. Si le croupier a un Blackjack, le jeu est un match nul et la mise du joueur de 100 $ est remboursée.
+</Aside>
+
+## Assurance
+
+Une caractéristique particulière du jeu est l'offre d'assurance Blackjack par le croupier si la première carte du croupier est un As et que le joueur n'a pas de Blackjack. Dans ce cas, la mise d'assurance est égale à la moitié de la mise initiale du joueur. Si le croupier obtient un Blackjack, le joueur perd sa mise initiale, mais l'assurance est déclenchée à une cote de 2:1.
+
+<Aside>
+Par exemple :
+
+Un joueur mise 100 $. La première carte du croupier est un as et le joueur n'a pas de blackjack. Le croupier lui propose alors une assurance. Si le joueur accepte, son assurance est de 50 $. Si le croupier obtient un blackjack, le joueur perd sa mise initiale de 100 $, mais l'assurance est déclenchée et il reçoit 150 $. Le joueur n'a donc rien perdu.
+</Aside>
